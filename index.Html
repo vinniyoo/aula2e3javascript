@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>estudo</title>
+
+<script src="estudo.js"></script>
+
+</head>
+<body>
+    
+<h1>Saudação personalizada</h1>
+
+<Label for="nome">Insira seu nome: </Label>
+<Input type="text" id="nomeInput"></Input>
+<button onclick="exibirSaudacao()">Mostrar Saudação</button>
+<p id="saudacao"></p>
+
+<script>
+function exibirSaudacao() {
+  var nome = document.getElementById("nomeInput").value;
+  var saudacaoElement = document.getElementById("saudacao");
+
+
+  if (nome !== "") {
+  saudacaoElement.textContent = "Olá, " + nome + "! Bem-vindo ao mundo do JavaScript.";
+} else {
+
+saudacaoElement.textContent = "Por favor, insira um nome válido.";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
